@@ -1,13 +1,16 @@
+/*Reset default margin, padding and box-sizing*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+  /*Styling for background of whole page*/
   body{
     background: #111;
   }
   
+  /*Styling for logo*/
   header{
     position: fixed;
     top: 0;
@@ -20,6 +23,7 @@
     z-index: 10000;
   }
   
+
   a{
     font-size: 1.5em;
     color: antiquewhite;
@@ -29,6 +33,7 @@
     letter-spacing: 2px;
   }
   
+  /*Styling for slider section*/
   .slider{
     position: relative;
     width: 100%;
@@ -39,6 +44,7 @@
     background: #000;
   }
   
+  /*Styling for images within slider*/
   .slider .img{
     position: absolute;
     top: 0;
@@ -52,11 +58,14 @@
     z-index: 1;
     clip-path: circle(0px at center);
   }
+
+  /*Styling for the checked radio input within the slider*/
   .slider input[type="radio"]:checked + .img{
     z-index: 10;
     clip-path: circle(1000px at center);
   }
   
+  /*Styling fot images within the slider*/
   .slider .img img{
     position: absolute;
     top: 0;
@@ -66,12 +75,14 @@
     object-fit: cover;
   }
   
+  /*Styling for content within the slider images */
   .slider .img .content{
     position: relative;
     text-align: center;
     max-width: 800px;
   }
   
+  /*Styling for the header within the slider content*/
   .slider .img .content h2{
     font-size: 4em;
     line-height: 1em;
@@ -81,6 +92,7 @@
     margin-top: 350px;
   }
   
+  /*Styling for radio input elements*/
   .slider input[type="radio"]{
     position: relative;
     z-index: 100;
@@ -89,7 +101,8 @@
     outline: none;
     cursor: pointer;
   }
-
+  
+  /*Styling for h2 elements*/
   h2 {
     position: relative;
     top: 250px;
